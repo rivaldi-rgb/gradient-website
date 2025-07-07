@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kontak - Gradient</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="gaya.css">
 </head>
 <body>
   <header>
-    <nav class="navbar">
-      <a href="index.html" class="logo">Gradient</a>
-      <ul class="nav-links">
+    <nav>
+      <h1>Gradient</h1>
+      <ul>
         <li><a href="index.html">Beranda</a></li>
         <li><a href="tentang.html">Tentang</a></li>
         <li><a href="layanan.html">Layanan</a></li>
-        <li><a href="kontak.html">Kontak</a></li>
+        <li><a href="kontak.html" class="aktif">Kontak</a></li>
       </ul>
     </nav>
   </header>
-  <section class="content fade-in">
-    <h1>Hubungi Kami</h1>
-    <p>Email: kontak@gradient.com | Instagram: @gradient</p>
+
+  <section class="konten">
+    <h2>Hubungi Kami</h2>
+    <form action="#" method="post">
+      <input type="text" placeholder="Nama Anda" required>
+      <input type="email" placeholder="Email Anda" required>
+      <textarea placeholder="Pesan Anda" required></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+    <p>Email: info@gradient.com</p>
+    <p>WhatsApp: 0812-3456-7890</p>
   </section>
+
+  <footer>
+    <p>© 2025 Gradient. Semua hak dilindungi.</p>
+  </footer>
 </body>
 </html>
