@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gradient Inspired</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Gradient</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#features">Layanan</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">☰</div>
+  </nav>
+
+  <!-- Hero Section -->
+  <main class="hero" id="hero">
+    <div class="overlay">
+      <div class="text-box">
+        <h1>Lapisan Baru dalam Teknologi</h1>
+        <p>Solusi kreatif untuk generasi digital berikutnya.</p>
+        <a href="#" class="cta-btn">Jelajahi</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <div class="feature-box">
+      <h2>Stabil & Cepat</h2>
+      <p>Kami bangun dengan performa sebagai prioritas utama.</p>
+    </div>
+    <div class="feature-box">
+      <h2>Desain Modern</h2>
+      <p>Dipoles dengan estetika gradasi dan tipografi bersih.</p>
+    </div>
+    <div class="feature-box">
+      <h2>Siap Skalasi</h2>
+      <p>Cocok untuk startup maupun perusahaan besar.</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="about-container">
+      <h2>Tentang Kami</h2>
+      <p>Kami adalah tim kreatif yang fokus pada pengembangan teknologi visual, desain futuristik, dan performa tinggi.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2>Hubungi Kami</h2>
+    <form>
+      <input type="text" placeholder="Nama Anda" required />
+      <input type="email" placeholder="Email Anda" required />
+      <textarea placeholder="Pesan Anda" required></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>Apa Kata Mereka</h2>
+    <div class="testimonial">
+      <p>"Websitenya cepat, elegan, dan sangat profesional!"</p>
+      <span>– Rani, UI Designer</span>
+    </div>
+    <div class="testimonial">
+      <p>"Saya sangat puas dengan hasilnya. Layout bersih dan menarik."</p>
+      <span>– Andi, Developer</span>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats">
+    <div class="stat-box">
+      <h3>10K+</h3>
+      <p>Pengunjung Bulanan</p>
+    </div>
+    <div class="stat-box">
+      <h3>500+</h3>
+      <p>Proyek Terselesaikan</p>
+    </div>
+    <div class="stat-box">
+      <h3>99%</h3>
+      <p>Kepuasan Klien</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Gradient Project. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>
