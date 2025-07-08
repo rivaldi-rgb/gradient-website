@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kontak - Gradient</title>
   <link rel="stylesheet" href="gaya.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
 </head>
 <body>
   <header>
@@ -15,24 +16,28 @@
         <li><a href="tentang.html">Tentang</a></li>
         <li><a href="layanan.html">Layanan</a></li>
         <li><a href="kontak.html" class="aktif">Kontak</a></li>
+        <li><button onclick="toggleDarkMode()">🌙</button></li>
       </ul>
     </nav>
   </header>
-
-  <section class="konten">
+  <section class="konten" data-aos="fade-up">
     <h2>Hubungi Kami</h2>
-    <form action="#" method="post">
-      <input type="text" placeholder="Nama Anda" required>
-      <input type="email" placeholder="Email Anda" required>
-      <textarea placeholder="Pesan Anda" required></textarea>
+    <form action="https://formspree.io/f/your-form-id" method="POST" data-aos="fade-up">
+      <input type="text" name="nama" placeholder="Nama Anda" required>
+      <input type="email" name="email" placeholder="Email Anda" required>
+      <textarea name="pesan" placeholder="Pesan Anda" required></textarea>
       <button type="submit">Kirim</button>
     </form>
     <p>Email: info@gradient.com</p>
     <p>WhatsApp: 0812-3456-7890</p>
   </section>
-
+  <a href="https://wa.me/6281234567890" class="tombol" style="position: fixed; bottom: 20px; left: 20px; background: #25d366; color: white; border-radius: 30px;">Chat WA</a>
+  <button onclick="scrollToTop()" id="backToTop" title="Kembali ke atas">↑</button>
   <footer>
     <p>© 2025 Gradient. Semua hak dilindungi.</p>
   </footer>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>

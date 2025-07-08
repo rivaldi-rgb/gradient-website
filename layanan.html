@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Layanan - Gradient</title>
   <link rel="stylesheet" href="gaya.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
 </head>
 <body>
   <header>
@@ -15,22 +16,26 @@
         <li><a href="tentang.html">Tentang</a></li>
         <li><a href="layanan.html" class="aktif">Layanan</a></li>
         <li><a href="kontak.html">Kontak</a></li>
+        <li><button onclick="toggleDarkMode()">🌙</button></li>
       </ul>
     </nav>
   </header>
-
-  <section class="konten">
+  <section class="konten" data-aos="fade-up">
     <h2>Layanan Kami</h2>
     <ul class="daftar-layanan">
-      <li>🖌️ Desain Website</li>
-      <li>💻 Instalasi & Setup Hosting</li>
-      <li>🛠️ Servis & Perawatan Komputer</li>
-      <li>📷 Desain Pamflet & Brosur</li>
+      <li data-aos="fade-up">🖌️ Desain Website Modern</li>
+      <li data-aos="fade-up" data-aos-delay="100">💻 Instalasi & Setup Hosting</li>
+      <li data-aos="fade-up" data-aos-delay="200">🛠️ Servis & Perawatan Komputer</li>
+      <li data-aos="fade-up" data-aos-delay="300">📷 Desain Pamflet & Brosur</li>
     </ul>
   </section>
-
+  <a href="https://wa.me/6281234567890" class="tombol" style="position: fixed; bottom: 20px; left: 20px; background: #25d366; color: white; border-radius: 30px;">Chat WA</a>
+  <button onclick="scrollToTop()" id="backToTop" title="Kembali ke atas">↑</button>
   <footer>
     <p>© 2025 Gradient. Semua hak dilindungi.</p>
   </footer>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>

@@ -1,67 +1,126 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
 body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #1d2671, #c33764);
-  color: white;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+  transition: background 0.3s, color 0.3s;
 }
+
 header {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 20px;
+  background: linear-gradient(to right, #2c3e50, #8e44ad);
+  padding: 1em 2em;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
-.navbar {
+
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.navbar .logo {
-  font-size: 24px;
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
   font-weight: bold;
-  color: white;
-  text-decoration: none;
 }
-.navbar .nav-links li {
-  display: inline;
-  margin: 0 10px;
+
+nav a.aktif {
+  border-bottom: 2px solid yellow;
 }
-.navbar .nav-links a {
-  color: white;
-  text-decoration: none;
-  transition: 0.3s;
-}
-.navbar .nav-links a:hover {
-  color: #ffcc70;
-}
+
 .hero {
-  padding: 100px 20px;
+  background: linear-gradient(to right, #2c3e50, #e74c3c);
+  color: white;
   text-align: center;
+  padding: 5em 2em;
 }
-.hero h1 {
-  font-size: 48px;
-}
-.hero .btn {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #ffcc70;
-  color: #333;
+
+.tombol {
+  background: #f9c74f;
+  color: black;
+  padding: 0.7em 1.5em;
   border: none;
-  border-radius: 8px;
   text-decoration: none;
-  font-weight: bold;
+  border-radius: 8px;
+  margin-top: 1em;
+  display: inline-block;
 }
-.content {
-  padding: 80px 20px;
+
+.konten {
+  padding: 2em;
+  max-width: 800px;
+  margin: auto;
+}
+
+.fitur-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 2em;
+}
+
+.fitur-box {
+  background: white;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  width: 250px;
   text-align: center;
 }
-.fade-in {
-  animation: fadeIn 1s ease-in forwards;
-  opacity: 0;
+
+form input, form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 1em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+
+form button {
+  background: #2ecc71;
+  color: white;
+  padding: 1em;
+  border: none;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  background: #222;
+  color: white;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background: #8e44ad;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.dark-mode {
+  background-color: #111;
+  color: #eee;
 }
