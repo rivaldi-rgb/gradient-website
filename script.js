@@ -14,3 +14,7 @@ function scrollToTop() {
 function toggleDarkMode() {
   document.body.classList.toggle("dark-mode");
 }
+function toggleMenu() {
+  const navLinks = document.getElementById("navLinks");
+  navLinks.classList.toggle("active");
+}
