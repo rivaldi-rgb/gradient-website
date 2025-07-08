@@ -8,18 +8,28 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
 </head>
 <body>
-  <header>
-    <nav>
-      <h1>Gradient</h1>
-      <ul>
-        <li><a href="index.html">Beranda</a></li>
-        <li><a href="tentang.html">Tentang</a></li>
-        <li><a href="layanan.html">Layanan</a></li>
-        <li><a href="kontak.html" class="aktif">Kontak</a></li>
-        <li><button onclick="toggleDarkMode()">🌙</button></li>
-      </ul>
-    </nav>
-  </header>
+ <header>
+  <nav class="navbar">
+    <!-- Logo / Judul Website -->
+    <div class="logo">
+      <a href="index.html">Gradient</a>
+    </div>
+
+    <!-- Tombol Burger Menu untuk HP -->
+    <div class="burger" onclick="toggleMenu()">☰</div>
+
+    <!-- Link Navigasi -->
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="tentang.html">Tentang</a></li>
+      <li><a href="layanan.html">Layanan</a></li>
+      <li><a href="portofolio.html">Portofolio</a></li>
+      <li><a href="kontak.html">Kontak</a></li>
+      <li><button onclick="toggleDarkMode()">🌙</button></li>
+    </ul>
+  </nav>
+</header>
+
   <section class="konten" data-aos="fade-up">
     <h2>Hubungi Kami</h2>
     <form action="https://formspree.io/f/your-form-id" method="POST" data-aos="fade-up">
